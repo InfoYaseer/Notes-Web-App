@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ===== Main Layout ===== */
+body {
+    background-color: #0f172a;
+    color: #e5e7eb;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 24px;
+    min-height: 100vh;
+}
+
+/* ===== Header ===== */
+.container h1 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.container h1 img {
+    width: 42px;
+}
+
+/* ===== Button ===== */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #6366f1;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 14px 24px;
+    margin: 28px 0;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #4f46e5;
+}
+
+.btn img {
+    width: 22px;
+}
+
+/* ===== Notes Area ===== */
+.notes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+}
+
+/* ===== Note Card ===== */
+.input-box {
+    position: relative;
+    min-height: 160px;
+    background: #ffffff;
+    color: #111827;
+    padding: 18px;
+    border-radius: 12px;
+    outline: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Delete Icon */
+.input-box img {
+    width: 22px;
+    position: absolute;
+    bottom: 14px;
+    right: 14px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.input-box img:hover {
+    opacity: 1;
+}
+
+/* ===== Mobile Optimization ===== */
+@media (max-width: 768px) {
+    .container {
+        padding: 28px 18px;
+    }
+
+    .container h1 {
+        font-size: 26px;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .notes-container {
+        grid-template-columns: 1fr;
+    }
+}
