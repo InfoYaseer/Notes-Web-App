@@ -1,3 +1,3 @@
 ## 📸 Demo
-- Live Site: https://infoyaseer.github.io/Notes-Web-App/
+- Live Site: https://yaseerm.me/javascript-projects/note-app%20js/
 - Source Code: This repository
